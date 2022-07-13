@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0 0 0);
+    font-weight: 600;
+}
+
+.header__main {
+    box-shadow: 0px 2px 6px #0000001f;
+    background: #fff;
+    position: relative;
+}
+
+.header__main:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #e91e63, #00bcd4);
+    height: 2px;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #00bcd4;
+}
+
+.carousel-caption {
+    left: 25% !important;
+    right: inherit !important;
+    top: 50%;
+    bottom: inherit;
+    text-align: left;
+    transform: translate(-40%, -50%);
+    width: 530px;
+}
+
+.carousel-fade .carousel-item {
+    height: 60vh;
+}
+
+.carousel-control-next-icon {
+    position: relative;
+    background-size: 70%;
+}
+
+.carousel-control-prev-icon {
+    position: relative;
+    background-size: 70%;
+}
+
+.carousel-control-next-icon:after,
+.carousel-control-prev-icon::after {
+    content: "";
+    position: absolute;
+    background: #00000030;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+.main{
+    margin-top: 68px;
+}
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32%;
+    background: #ffffff1a;
+    border-bottom: 3px solid var(--bs-blue) !important;
+
+}
+
+.sidebar {
+    background: #343a40;
+    height: 100vh;
+    width: 270px;
+    display: block;
+    transition: all 0.4s;
+}
+
+.sidebar.slow {
+    margin: 0 0 0 -270px;
+    transition: all 0.4s;
+}
+
+.Dashboard-Content {
+    width: calc(100%);
+}
+.top-bar {
+    background: #fff;
+    box-shadow: 0 5px 4px #00000012;
+    padding: 8px 15px;
+}
+.title-box img {
+    width: 180px;
+    margin: 0 auto;
+}
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    display: block;
+    position: relative;
+}
+.sidebar ul li a {
+    padding: 6px 15px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #0000002b;
+    font-size: 0.8rem;
+    transition: ease 0.4s;
+}
+.title-box {
+    padding: 18px 8px;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 0 20px;
+    text-align: left;
+    border-bottom: 1px solid #272b2e;
+}
+.sidebar ul li a:hover {
+    background:#2b2f34;
+    transition: ease 0.4s;
+}
+
+i.bx-chevron-down {
+    float: right;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+    margin: -18px 5px;
+    color: white;
+    cursor: pointer;
+}
+.sub-menu {
+    background: #303030;
+}
+.sub-menu .sub-menu {
+    background: #000;
+}
+.top-bar .btn-check:focus+.btn-light, .btn-light:focus {
+    box-shadow: none !important;
+}
+.active{
+    background-color: black;
+}
+.customadd .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25% !important;
+}
+#success-alert, #danger-alert {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+}
+
+.loginbg {
+    background: linear-gradient(45deg, #000000c9, #343a40bf), url(https://www.teahub.io/photos/full/5-52864_preview-wallpaper-london-height-buildings-sky-skyscrapers-beautiful.jpg);
+    min-height: 100vh;
+    background-size: 100%;
+    background-position: 0;
+    margin: 0;
+}
