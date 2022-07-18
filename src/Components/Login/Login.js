@@ -91,8 +91,8 @@ if(getStatus){
             </div>
               <button type="button" onClick={handleSubmit} className="btn btn-primary mt-4 w-100">Submit</button>
 
-            <div class="row">
-              <div class="col-6 m-auto">
+            <div className="row">
+              <div className="col-6 m-auto">
                 <button className="btn btn-outline-light mt-4 w-100">Forget Password</button>
               </div>
             </div>

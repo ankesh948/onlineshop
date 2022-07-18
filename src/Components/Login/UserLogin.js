@@ -1,11 +1,8 @@
 import React, {useState} from "react";
-import {Navigate } from 'react-router-dom';
-import jwtDecode from "jwt-decode";
 
 function UserLogin() {
    const [username, setUserName] = useState();
    const [password, setPassword] = useState();
-   const [getStatus, setStatus] = useState();
 
    const credentials = {
     username,
@@ -26,7 +23,6 @@ function UserLogin() {
         await loginUser(credentials).then((value) => {
           localStorage.setItem('accessToken', value['accessToken']);
           localStorage.setItem('user', JSON.stringify(value['user']));
-          setStatus(true);
         });
       }else{
         await loginUser(credentials).then((value) => {

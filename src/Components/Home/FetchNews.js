@@ -33,7 +33,7 @@ function FetchNews() {
                             return (
                                 <div className='col-4'>
                                     <div className="card mb-4">
-                                        <img src={value.urlToImage} className="card-img-top" />
+                                        <img src={value.urlToImage} className="card-img-top" alt="shop"/>
                                         <div className="card-body">
                                             <h5 className="card-title mb-0">{value.publishedAt}</h5>
                                             <p className="card-text mb-4 fw-bold">{value.title}</p>

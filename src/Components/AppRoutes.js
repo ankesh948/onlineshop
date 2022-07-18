@@ -14,8 +14,7 @@ import UserLogin from './Login/UserLogin';
 function AppRoutes() {
   return (
     <>
-
-    <Header />
+    <Header/>
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
@@ -29,7 +28,6 @@ function AppRoutes() {
         <Route path="admin" element={<Login />}></Route>
         <Route path="signup" element={<Signup />}></Route>
         <Route path="userlogin" element={<UserLogin />}></Route>
-
       </Routes> 
     </BrowserRouter>
     </>

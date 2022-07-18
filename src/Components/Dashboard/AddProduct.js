@@ -11,7 +11,7 @@ function AddProducts() {
     const [price, setPrice] = useState();
     const [category, setCategory] = useState();
 
-    const [getProducts, setProducts] = useState([]);
+    // const [getProducts, setProducts] = useState([]);
 
 
     async function submitHandle(e) {
@@ -24,21 +24,23 @@ function AddProducts() {
         }
         const result = await fetch('http://localhost:8888/products',).then(data => data.json())
         console.log(result)
+
+        console.log(formData)
     }
 
     useEffect(() => {
         async function fetchNews() {
             fetch('http://localhost:8888/products')
                 .then((responsive) => {
-                    console.warn(responsive)
-                    setProducts(responsive)
+                    // console.warn(responsive)
+                    // setProducts(responsive)
                 })
         }
         fetchNews()
     })
 
 
-    console.log(setProducts )
+    // console.log(setProducts )
 
     return (
         <>

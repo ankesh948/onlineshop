@@ -37,9 +37,13 @@ function Sidebar() {
     );
     }
   const logout = () => {
-    localStorage.removeItem('user');
-    localStorage.removeItem('accessToken');
+    // localStorage.removeItem('user');
+    // localStorage.removeItem('accessToken');
+    // return setStatus(true)
+
+    localStorage.clear();
     return setStatus(true)
+    // window.location.reload(false);
   };
 
   if (getStatus) {
