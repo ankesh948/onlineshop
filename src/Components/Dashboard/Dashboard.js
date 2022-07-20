@@ -1,5 +1,5 @@
-import Sidebar from './Sidebar';
-import Topbar from './Topbar';
+import Sidebar from './Inc/Sidebar';
+import Topbar from './Inc/Topbar';
 import { Link } from 'react-router-dom';
 
 function Dashboard() {

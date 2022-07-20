@@ -58,11 +58,12 @@ function List() {
                                             <td>{value.title}</td>
                                             <td>{value.description}</td>
                                             <td>{value.price}</td>
-                                            <td><div className='d-flex justify-content-center pt-1 gap-4'>
+                                            <td>
+                                                <div className='d-flex justify-content-center pt-1 gap-4'>
                                                 <Link to={`/view/${value.id}`} className='text-info'><FontAwesomeIcon icon={faEye} /></Link>
                                                 <Link to={`/edit/${value.id}`} className='text-dark'><FontAwesomeIcon icon={faPenToSquare} /></Link>
-                                            <FontAwesomeIcon onClick={()=>deteleHandle(value.id)} className='text-danger' icon={faTrash} />
-                                            </div>
+                                                <FontAwesomeIcon onClick={()=>deteleHandle(value.id)} className='text-danger' icon={faTrash} />
+                                                </div>
                                             </td>
                                         </tr>
 

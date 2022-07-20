@@ -161,9 +161,7 @@ i.bx-chevron-down {
 .top-bar .btn-check:focus+.btn-light, .btn-light:focus {
     box-shadow: none !important;
 }
-.active{
-    background-color: black;
-}
+
 .customadd .col-lg-3 {
     flex: 0 0 auto;
     width: 25% !important;

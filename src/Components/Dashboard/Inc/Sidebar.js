@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import $ from 'jquery';
 import jwtDecode from "jwt-decode";
 import { Navigate } from 'react-router-dom';
-import Dashboard from './Dashboard';
+import Dashboard from '../Dashboard';
 
 function Sidebar() {
   const [getStatus, setStatus] = useState();
@@ -43,7 +43,7 @@ function Sidebar() {
 
     localStorage.clear();
     return setStatus(true)
-    // window.location.reload(false);
+    window.location.reload(false);
   };
 
   if (getStatus) {

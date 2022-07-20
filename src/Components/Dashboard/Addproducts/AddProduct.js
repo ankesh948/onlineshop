@@ -1,17 +1,20 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
-import Sidebar from './Sidebar';
-import Topbar from './Topbar';
+import Sidebar from '../Inc/Sidebar';
+import Topbar from '../Inc/Topbar';
+import axios from 'axios';
+import ProdcutsDataTable from './ProductsDataTable'
 
 function AddProducts() {
+
+
 
     const [name, setName] = useState();
     const [description, setDes] = useState();
     const [price, setPrice] = useState();
     const [category, setCategory] = useState();
 
-    // const [getProducts, setProducts] = useState([]);
 
 
     async function submitHandle(e) {
@@ -22,25 +25,11 @@ function AddProducts() {
             price: price,
             category: category
         }
-        const result = await fetch('http://localhost:8888/products',).then(data => data.json())
-        console.log(result)
-
-        console.log(formData)
+        await axios.post('http://localhost:8888/products', formData)
+            .then((response) => response)
     }
 
-    useEffect(() => {
-        async function fetchNews() {
-            fetch('http://localhost:8888/products')
-                .then((responsive) => {
-                    // console.warn(responsive)
-                    // setProducts(responsive)
-                })
-        }
-        fetchNews()
-    })
 
-
-    // console.log(setProducts )
 
     return (
         <>
@@ -78,15 +67,17 @@ function AddProducts() {
                                         </Button>
                                     </Form>
                                 </div>
-
                             </Col>
                         </Row>
 
-                        <Row>
-                            {/* {getProducts.map((value) => {
 
-                            })
-                            } */}
+                        <Row>
+                  
+
+                    <ProdcutsDataTable />
+
+
+
                         </Row>
 
                     </Container>

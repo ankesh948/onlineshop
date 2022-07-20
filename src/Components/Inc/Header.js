@@ -1,43 +1,42 @@
-import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import { Navbar, Container, Nav } from 'react-bootstrap'
-import '../../App.css';
 
 function Header() {
 
   return (
     <>
+    
       <header className="header__main fixed-top">
-        <Navbar expand="lg">
+      <Navbar expand="lg">
           <Container>
-            <Navbar.Brand href="/" className="d-flex gap-3 justify-content-center align-items-center">
+
+            <Link to="/" className="d-flex gap-3 justify-content-center align-items-center">
               <img src="/img/logo.png" width="175" alt="" />
-            </Navbar.Brand>
+            </Link>
+
             <Navbar.Toggle aria-controls="navbarScroll" />
+
             <Navbar.Collapse id="navbarScroll">
-              <Nav
-                className="m-auto my-2 my-lg-0"
-                style={{ maxHeight: '100px' }}
-                navbarScroll
-              >
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="news">News</Nav.Link>
-                <Nav.Link href="/admin">Admin</Nav.Link>
+              <Nav className="m-auto my-2 my-lg-0">
+                <NavLink className='nav-link' to="/">Home</NavLink>
+                <NavLink className='nav-link' to="/news">News</NavLink>
+                <NavLink className='nav-link' to="/admin">Admin</NavLink>
               </Nav>
             </Navbar.Collapse>
 
-            <a href="/userlogin">
-              <button className='btn btn-sm btn-outline-dark me-2'>
+            <Link to="/userlogin" className='btn btn-sm btn-outline-dark me-2'>
                 <i className="fa fa-sign-in me-2"></i> Login
-              </button>
-            </a>
+            </Link>
 
-            <a href="/signup" className='btn btn-sm btn-outline-dark me-2'>
+            <Link to="/signup" className='btn btn-sm btn-outline-dark me-2'>
               <i className="fa fa-user-plus me-2"></i>Sing Up
-            </a>
+            </Link> 
 
             <button className='btn btn-sm btn-outline-dark'><i className="fa fa-shopping-cart me-2"></i>Cart (0)</button>
+
           </Container>
-        </Navbar>
+        </Navbar> 
+
       </header>
     </>
   )

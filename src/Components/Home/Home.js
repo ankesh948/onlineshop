@@ -2,6 +2,8 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import Header from '../Inc/Header'
+
 function Home() {
     return (
         <>
