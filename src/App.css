@@ -2,25 +2,21 @@
     padding: 0;
     padding: 0;
 }
-
 body {
     font-family: 'Poppins', sans-serif !important;
     font-size: 1rem;
     line-height: 1.5rem;
     color: #000;
 }
-
 .navbar-light .navbar-nav .nav-link {
     color: rgb(0 0 0);
     font-weight: 600;
 }
-
 .header__main {
     box-shadow: 0px 2px 6px #0000001f;
     background: #fff;
     position: relative;
 }
-
 .header__main:after {
     content: "";
     position: absolute;
@@ -30,12 +26,9 @@ body {
     height: 2px;
     width: 100%;
 }
-
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
     color: #00bcd4;
 }
-
 .carousel-caption {
     left: 25% !important;
     right: inherit !important;
@@ -45,23 +38,18 @@ body {
     transform: translate(-40%, -50%);
     width: 530px;
 }
-
 .carousel-fade .carousel-item {
     height: 60vh;
 }
-
 .carousel-control-next-icon {
     position: relative;
     background-size: 70%;
 }
-
 .carousel-control-prev-icon {
     position: relative;
     background-size: 70%;
 }
-
-.carousel-control-next-icon:after,
-.carousel-control-prev-icon::after {
+.carousel-control-next-icon:after, .carousel-control-prev-icon::after {
     content: "";
     position: absolute;
     background: #00000030;
@@ -84,9 +72,7 @@ body {
     width: 32%;
     background: #ffffff1a;
     border-bottom: 3px solid var(--bs-blue) !important;
-
 }
-
 .sidebar {
     background: #343a40;
     height: 100vh;
@@ -94,14 +80,14 @@ body {
     display: block;
     transition: all 0.4s;
 }
-
 .sidebar.slow {
     margin: 0 0 0 -270px;
     transition: all 0.4s;
 }
-
 .Dashboard-Content {
     width: calc(100%);
+    height: 100vh;
+    overflow-y: scroll;
 }
 .top-bar {
     background: #fff;
@@ -116,7 +102,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .sidebar ul li {
     display: block;
     position: relative;
@@ -142,7 +127,6 @@ body {
     background:#2b2f34;
     transition: ease 0.4s;
 }
-
 i.bx-chevron-down {
     float: right;
     width: 24px;
@@ -161,7 +145,6 @@ i.bx-chevron-down {
 .top-bar .btn-check:focus+.btn-light, .btn-light:focus {
     box-shadow: none !important;
 }
-
 .customadd .col-lg-3 {
     flex: 0 0 auto;
     width: 25% !important;
@@ -171,11 +154,26 @@ i.bx-chevron-down {
     top: 90px;
     right: 20px;
 }
-
 .loginbg {
     background: linear-gradient(45deg, #000000c9, #343a40bf), url(https://www.teahub.io/photos/full/5-52864_preview-wallpaper-london-height-buildings-sky-skyscrapers-beautiful.jpg);
     min-height: 100vh;
     background-size: 100%;
     background-position: 0;
     margin: 0;
+}
+.cursor-pointer{
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.cursor-pointer:hover {
+    transform: scale(1.2);
+    transition: all 0.4s;
+    box-shadow: 0px 3px 4px 0px #00000033;
+}
+.rdt_TableCell {
+    border-left: 1px solid #ddd;
+}
+.rdt_TableCell:last-child{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }

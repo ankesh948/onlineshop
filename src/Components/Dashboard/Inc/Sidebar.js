@@ -14,6 +14,7 @@ function Sidebar() {
       $(this).next('.sub-menu').slideToggle('slow');
       $(this).parent().siblings().find('.sub-menu').slideUp('slow');
     });
+
     $(document).ready(function () {
       $("#collab").css('cursor', 'pointer').click(function () {
         $('.sidebar').toggleClass('slow');
@@ -21,7 +22,7 @@ function Sidebar() {
     });
 
     $('.header__main').hide();
-  });
+  },[]);  
 
   function getCurrentUser() {
     try {
@@ -60,7 +61,7 @@ function Sidebar() {
         <ul id="menu">
           <li><Link to="/dashboard"><i className='bx bxs-dashboard'></i>  DashBoard</Link></li>
           <li><Link to=""><i className='bx bx-message-square' ></i> Pages</Link></li>
-          <li><Link to="/addproduct"><i className='bx bxs-building-house'></i> Add Products</Link></li>
+          <li><Link to="/products"><i className='bx bxs-building-house'></i> Add Products</Link></li>
           <li><Link to=""><i className='bx bx-align-left'></i> Manage Categories</Link>
             <i id="dropdown" className='bx bx-chevron-down'></i>
             <ul className="sub-menu">
